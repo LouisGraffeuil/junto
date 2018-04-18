@@ -72,6 +72,7 @@ def questionnaire():
 	                       ACTIVITY_TYPE=ACTIVITY_TYPE, ACTIVITY_DURATION=ACTIVITY_DURATION, GENDER=GENDER,
 	                       AGE_RANGE=AGE_RANGE, BUDGET_RANGE=BUDGET_RANGE)
 
+
 @app.route('/suggestion.html', methods=['GET', 'POST'])
 def suggestion():
 	if request.method=="POST":

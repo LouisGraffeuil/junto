@@ -1,1 +1,1 @@
-web: gunicorn -w 4 --bind localhost:443
+web: gunicorn -w 4 junto:app
