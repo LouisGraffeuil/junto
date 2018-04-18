@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="twitter:description" content="Junto vous aide à trouver des expériences uniques autour de vous selon vosc ritères" />
+    <title>JUNTO vous trouve des expériences uniques autour de vous </title>
+    
+    <!--font-->
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet" type="text/css">
+
+    <!-- css -->
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../static/css/index2.css" >
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <!-- script
+    ================================================== -->
+    <script src="../static/js/modernizr.js"></script>
+    <script src="../static/js/pace.min.js"></script>
+
+    <!-- Java Script
+    ================================================== -->
+    
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/main.js"></script>
+
+   
+</head>
+
+<!-- contenu du site -->
+
+{% block body %}
+<body class="homepage">
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"> JUNTO </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar right">
+                <li class="active"><a href=""> Accueil </a></li>
+                <li><a href="about.html"> Comment ça marche ? </a></li>
+                <li><a href="experience.html"> Proposer une expérience </a></li>
+                <li><a href="partenaire.html"> Espace partenaire </a></li>
+            </ul>
+    </div>
+    </div>
+
+</nav>
+
+
+
+<!-- start bannière -->
+
+<section class="main-container">
+    <article class="index-intro">
+        <div class="container-fluid">
+            <div class="jumbotron img-responsive">
+                <div class="row">
+                <div class="col-xl-12 mx-auto  text-center">
+                <h1 style="color:#FFF"> Dénicher Des Expériences Touristiques Uniques Autour De Vous</h1>
+                </div>
+                <div class="col-xl-12 mx-auto text-center">
+                <button class="btn btn-custom"><a href="questionnaire.html" > Découvrez des expériences uniques ! </a></button>
+                <button class="btn btn-custom"> J'ai déjà quelque chose en tête</button>
+                </div>
+                </div>  
+            </div>
+        </div>
+    </article>
+</section>
+
+<!-- end bannière -->
+
+<!-- ===================================================================
+ * # CARDS
+ *
+ =================================================================== -->
+    
+
+<div class="container" >   
+    <div class="row">
+        <div class="card-header" style="margin-top:50px;"> 
+        <h1>On vous partage nos meilleurs expériences </h1>
+        <hr class="separator" style="margin-top:30px;margin-bottom:30px">
+        <div class="card-deck"  >
+            <div class="col-sm-4 mx-auto">
+                <div class="card">
+                    <div class="card-body"> <img class="card-img-top img-responsive center-block" src="../static/img/craftpeople.jpeg" alt="Card image cap">
+                        <h5 class="card-title">Authenticité & Proximité</h5>
+                        <p class="card-text"> Nous vous proposons de partir à la rencontre des locaux et de partager avec eux leurs histoires. Ce sont des visites et expériences authentiques au plus près de la population locale. Grâce à notre réseau de partenaires locaux, nous pouvons vous proposer des offres authentiques  </p>
+                        <a href="questionnaire.html" class="btn btn-primary">En savoir plus...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mx-auto">
+                <div class="card">
+                    <div class="card-body"><img class="card-img-top img-responsive center-block" src="../static/img/astuces.jpeg" alt="Card image cap">
+                        <h5 class="card-title">Bon Plans</h5>
+                        <p class="card-text"> Le budget est un critère important dans la recherche d'expérience touristique. Nous avons dans notre base de données des expériences pour tous les budgets (même gratuit). Nos experts régionales sont là pour vous faire gagner du temps et sont disponibles 24h/24 </p><br>
+                        <a href="questionnaire.html" class="btn btn-primary">En savoir plus...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mx-auto">
+                <div class="card">
+                    <div class="card-body"><img class="card-img-top img-responsive center-block" src="../static/img/unique.jpeg" alt="Card image cap">
+                        <h5 class="card-title">Découverte unique</h5>
+                        <p class="card-text"> Sur Junto, vous allez pouvoir retrouver des expériences qui n'existent nulle part ailleurs. Elles sont totalement uniques et vous permettent de bénéficier d'expériences de qualité avec notre charte de critères que chaque partenaire doit remplir.</p><br>
+                        <a href="questionnaire.html" class="btn btn-primary">En savoir plus...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+<!-- COMMENT CA MARCHE -->
+<section class="showcase">
+    <div class="container-fluid">
+        <div class="row">
+            <hr class="separator" style="margin-top:-30px;margin-bottom:50px">
+            <div class="col-xl-12 mx-auto">
+                <h3 class="title" style="font-size:25px;">Profitez d'expériences touristiques
+                    <span class="underline" style="border-bottom:5px solid #54BAD8;font-size:30px">personnalisées et de qualité</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6  mx-auto showcase-text showcase-left">
+                <img src="../static/img/girl.png" style="position:left" class="fetcher-answer-left img-responsive">
+                <h2>Junto recherche à votre place</h2>
+                <h3>Sur notre base de données</h3>
+                <p class="lead mb-0">Nos experts personnalisent la recherche sur vos envies du moment</p>
+                <h3>Passer votre temps à profiter de vos vacances</h3>
+                <p class="lead mb-0">Nous nous chargeons de dénicher les expériences touristiques pour vous</p>
+            </div>
+            <div class="col-sm-6 max-auto showcase-text showcase-right">
+                <img src="../static/img/man.png" class="fetcher-answer-right img-responsive">
+                <h2>et propose des expériences uniques</h2>
+                <h3>Partagées par des locaux</h3>
+                <p class="lead mb-0">Idéal pour découvrir l'histoire d'une région avec la proximité des locaux </p>
+                <h3>Avec le meilleur rapport qualité / prix</h3>
+                <p class="lead mb-0">Grâce à la connaissance parfaite de la région, des activités de qualité vous sont garanties</p</div>
+            </div>
+            
+            <div class="col-lg-6 mx-auto showcase-text showcase-left2">
+                <img src="../static/img/gps.png" class="fetcher-answer-left2 img-responsive">
+               <h2>De manière simple et localisé</h2>
+               <h3>En quelques clics</h3>
+               <p class="lead mb-0">Questionnaire de 2min pour identifier vos envies, votre budget, nombre de personnes et thématiques voulues </p>
+               <h3>Autour de vous</h3>
+               <p class="lead mb-0">Les expériences proposées le sont selon votre géolocalisation actuelle</p></div>
+           </div>
+        
+        </div>
+
+
+
+        <div class="col-xl-2 mx-auto">
+            <a href="questionnaire.html" class="btn btn-lg btn-cta" style="margin-bottom:100px;">Essayer Junto</a>
+        </div>
+</section> <!-- end showcase -->
+
+
+
+<!-- CAROUSEL TEMOIGNAGES -->
+
+<section id="myCarousel" class="carousel slide" data-ride="carousel">
+
+     <ol class="carousel-indicators">
+        <li data-target ="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target ="#myCarousel" data-slide-to="1" ></li>
+        <li data-target ="#myCarousel" data-slide-to="2"></li>
+     </ol>
+
+            <div class="carousel-inner center-block" style="max-width:750px">
+                <div class="item active">
+                    <p>Très simple d'utilisation, en quelques clics j'ai pu exprimer la thématique que je voulais et on m'a rapidement donné les expériences autour de mon hébergement. Rapide, simple, efficace, rien à dire ... </p>
+                    <img src="../static/img/testimonial0.jpeg" alt="Author image" class="testimonials__avatar">
+                    <div class="testimonials__info">
+                        <span class="testimonials__name">Isabelle</span> 
+                    </div>
+                </div>
+                <div class="item">
+                        <p>Je cherchais des expériences authentiques et je suis tombé sur Junto. J'ai pu avoir une visite en moins de 24h chez un brasseur médiéval de bière pour mon budget. Dommage que c'est qu'en Dordogne.</p>
+                        <img src="../static/img/testimonial4.jpeg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Lucas</span> 
+                        </div>
+                </div>
+                <div class="item">
+                        <p>Excellent pour des expériences touristiques hors des sentiers battus ou des bons plans budget dans la région. On a adoré faire les visites chez des artisans et à la ferme en famille ! </p>
+                        <img src="../static/img/testimonial2.jpeg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Christophe</span> 
+                        </div>
+                </div>
+
+            </div>
+            <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+                    <span class="icon-next"></span>
+            </a>
+
+    </div>
+
+</section>
+
+<!-- /.SECTION PRESTATAIRE -->
+
+
+<section class="section-homepagepresta">
+    <div class="container">
+        <div class="row">
+        <div class="section__content">
+            <h4>Vous êtes passionné par un domaine et souhaitez le faire partager. </h4>
+            <h4>Rejoingnez notre communauté et proposer vos propres expériences ! </h4>
+
+            <a href="partenaire.html" class="btn btn-custom">Ajouter une expérience</a>
+
+            
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- END SECTION PRESTATAIRE -->
+
+
+<!-- Call to action -->
+<section class="cta text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h2 class="title lightning">⚡</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h3 class="title">Trouver des expériences uniques dès maintenant</h3>
+            </div>
+            <div class="col-xl-9 mx-auto">
+                    <a href="questionnaire.html" class="btn btn-lg btn-primary">
+                        Découvrir
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- FOOTER CONTACT
+    ================================================== -->
+
+
+<section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Nous Contacter</h3>
+                <h2 class="display-2 display-2--light">Notre équipe est disponible 24h/24 et 7j/7</h2>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+        
+                <div class="contact-primary">
+                        <h1> JUNTO </h1>
+                        <p>
+                            Junto accompagne les touristes pendant leur séjour en suggérant des expériences personnalisées, de qualités et de proximités. Grâce à un travail de recherche en amont et à notre communauté de partenaire, nous proposons des expériences uniques, hors des sentiers battus.
+                        </p>
+                                <div class="footer__chat-frame">
+                                    <p class="footer__live-chat" style="margin-top:30px;">LIVE CHAT 
+                                     <i class="footer__indicator fa fa-circle" style="color:green;margin-left:5px;font-size:15px;"></i>
+                                    </p>
+                                    <p class="footer__talk text--xsp" style="line-height:15px;font-size:13px;"> Echanger avec un expert régional en live pour avoir des suggestions ou nous demander une requête précise </p>
+                                    <div id="footer__live-chat-button" type="button" class="btn btn-custom2" style="color:#FFF;border-color:#FFF;">Start Live Chat
+                                    </div>
+                                </div>
+                        
+                    </div>
+    
+            <div class="contact-secondary">
+                <div class="contact-info">
+                        <h3 class="contact-secondary-title">JUNTO</h3>
+                        <p ><a href="about.html" style="color:#FFF;"> Comment ça marche ? </a></p>
+                        <p ><a href="experience.html" style="color:#FFF;"> Proposer une expérience </a></p>
+                        <p ><a href="partenaire.html" style="color:#FFF;"> Espace Partenaire </a></p>
+                        <p ><a href="blog.html" style="color:#FFF;"> Blog </a></p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    
+            </div> <!-- end contact-secondary -->
+            <div class="contact-secondary2">
+                    <div class="contact-info">
+                            <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                            <div class="cinfo">
+                                <h5>Pour nous joindre</h5>
+                                <p><span class="fa fa-phone" style="font-size:20px;"></span>   +33 6 67 04 59 76<br>
+                                    <i class="fa fa-envelope-o" style="font-size:20px;"></i> contact@hello-junto.com <br><br>
+                                    <i class="fa fa-home" style="font-size:20px;"></i>   Escourbaniers,<br>
+                                     19 400 Argentat sur Dordogne <br>
+                                </p>
+                                <h5 style="margin-top:20px">Nous Suivre</h5>
+                                <p>
+                                    <a href="#"><i class="fa fa-facebook-square" style="font-size:50px;color:#FFF;margin-right:20px;"></i></a>
+                                    <a href="#"><i class="fa fa-instagram" style="font-size:50px;color:#FFF"></i></a> <br>
+                                    <br>
+                                </p>
+            </div>
+        </div> 
+    </div><!-- end contact-content -->
+</div>
+</div>
+    </section> <!-- end s-contact -->
+
+<!-- end footer -->
+
+ 
+
+
+</body>
+{% endblock %}
+</html>

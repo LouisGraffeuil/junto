@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/index2.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="../static/js/modernizr.js"></script>
+    <script src="../static/js/pace.min.js"></script>
+
+    <!-- Java Script
+    ================================================== -->
+
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/main.js"></script>
+</head>
+
+{% block body %}
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-auto">
+            <div class="container-fluid">
+                <form class="form-horizontal" action="suggestion.html" method="post">
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label> <h4>Vous êtes :</h4>
+                                <select name="peopleType" class="form-control">
+                                    {% for p in PEOPLE_TYPE %}
+                                    <option value="{{ p }}">{{ p }}</option>
+                                    {% endfor %}
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label> <h4>Combien de personnes êtes vous exactement ?</h4>
+                                <input class="form-control" name="peopleNumber">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <h4>Vous êtes plutôt d'humeur à avoir envie de ?</h4>
+                        {% for a in ACTIVITY_THEME %}
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                {{ a }}
+                                <input class="form-check-input" name="activityThemeId{{ loop.index }}"
+                                       type="checkbox" value="{{ loop.index }}">
+                            </label>
+                        </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <h4>Quel type d'activités souhaitez vous faire ?</h4>
+                            {% for a in ACTIVITY_TYPE %}
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    {{ a }}
+                                    <input class="form-check-input" name="activityTypeId{{ loop.index }}" type="checkbox"
+                                           value="{{ loop.index }}">
+                                </label>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <!--<div>
+                        <label> Quel jour souhaiteriez vous faire l'activité ?
+                            <select formControlName="activityDay">
+                                <option *ngFor="let p of PEOPLE_TYPE" value="p"></option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label> A partir de quelle heure ?
+                            <select formControlName="activityHour">
+                                <option *ngFor="let p of PEOPLE_TYPE" value="p"></option>
+                            </select>
+                        </label>
+                    </div>-->
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label> <h4>Pour une durée maximum de :</h4>
+                                <select name="activityDuration" class="form-control">
+                                    {% for a in ACTIVITY_DURATION %}
+                                    <option value="{{ a }}">{{ a }}</option>
+                                    {% endfor %}
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label> <h4>Vous êtes ?</h4>
+                                <select name="gender" class="form-control">
+                                    {% for g in GENDER %}
+                                    <option value="{{ g }}">{{ g }}</option>
+                                    {% endfor %}
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label>
+                                <h4>Quel âge avez-vous ?</h4>
+                                <select name="ageRange" class="form-control">
+                                    {% for a in AGE_RANGE %}
+                                    <option value="{{ a }}">{{ a }}</option>
+                                    {% endfor %}
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label><h4>Comment souhaitez vous que l'on vous appelle ?</h4>
+                                <input name="name">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label><h4>Quelle est l'adresse email à laquelle on peut vous contacter ?</h4>
+                                <input name="mail">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label><h4>Quel est votre numéro de téléphone ?</h4>
+                                <input name="phone">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label>
+                                <h4>Quel est votre budget moyen par personne ?</h4>
+                                <select name="budgetRange" class="form-control">
+                                    {% for b in BUDGET_RANGE %}
+                                    <option value="{{ b }}">{{ b }}</option>
+                                    {% endfor %}
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label><h4> Actuellement votre hébergement touristique se nomme :</h4>
+                                <input formControlName="acommodationName">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input class="btn btn-primary" type="submit" value="Envoyer">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="col-sm"></div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

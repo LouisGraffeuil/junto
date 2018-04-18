@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suggestion</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/index2.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="../static/js/modernizr.js"></script>
+    <script src="../static/js/pace.min.js"></script>
+
+    <!-- Java Script
+    ================================================== -->
+
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/main.js"></script>
+</head>
+{% block body %}
+<body>
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            {% for act in activities %}
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" style="height: 225px; width: 100%; display: block"
+                         src="../static/img/Grey_full.png"
+                         data-holder-rendered="true">
+                    <div class="card-body">
+                        <h5>{{ act.activityTheme }}</h5>
+                        <div class="btn-group" style="padding-top:0.25em; padding-bottom:0.25em; ">
+                            {% for type in act.activityType %}
+                                <div class="btn btn-sm btn-outline-secondary">{{ type }}</div>
+                            {% endfor %}
+                        </div>
+                        <h3 style="width: 100%">{{ act.name }}</h3>
+                        <div>
+                            Nombre de personnes : {{ act.peopleMin }} - {{ act.peopleMax }}
+                        </div>
+                        <div>
+                            Prix : {{ act.priceMin }}€ - {{ act.priceMax }}€
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

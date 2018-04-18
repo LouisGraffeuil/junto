@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JUNTO</title>
+    
+    <!--font-->
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet" type="text/css">
+
+    <!-- css -->
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../static/css/index2.css" >
+
+    <!-- script
+    ================================================== -->
+    <script src="../static/js/modernizr.js"></script>
+    <script src="../static/js/pace.min.js"></script>
+
+
+   
+</head>
+
+<body class="questionnaire">
+
+<!-- header -->
+<header class="container-fluid header">
+    <div class="container">
+            <a href="index.html" class="logo"> JUNTO </a>
+        <nav class="menu">
+        <a href="index.html"> Accueil </a>
+        <a href="about.html"> Comment ça marche ? </a>
+        <a href="partenaire.html"> Espace Partenaire </a>
+        <a href="#contact">Contact</a>
+
+         </nav>
+    </div>
+</header>
+
+<!-- end header -->
+ 
+<!-- MY OWN FORM 
+
+
+<div class="container">
+
+    <div class="text-form">
+        <h2> Remplir mes critères de découverte </h2>
+        <p> Afin de vous suggérer les meilleurs activités touristiques qui correspondent à vos envies, il suffit juste de répondre à 5 questions ci-dessous, soit à peine 2 min</p>
+        <h5> Dépéchez-vous pour avoir encore de la place !! </h5>
+
+    </div>
+        
+        <form role="form">
+            
+            <div class="row setup-content" id="step-1">
+                <div class="col-xs-12">
+                    <div class="col-md-12">
+                        <h3> Information pratiques</h3>
+                        <div class="form-group">
+                            <label class="control-label" for="name">Quel est votre nom ?</label>
+                            <input maxlength="100" type="text" id="name" required="required" class="form-control" placeholder="Nom prénom"  />
+                           
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="email">Quel est votre adresse email ? </label>
+                            <input maxlength="100" type="email" required="required" id="email" class="form-control" placeholder="nom.prenom@gmail.com" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="phone">Quel est votre numéro de téléphone ? </label>
+                            <input maxlength="100" type="number" required="required" id="phone" class="form-control" placeholder="0634503590" />
+                        </div>
+                        <div class="form-group">
+                                <label class="control-label" for="age">Quel âge avez-vous ? </label>
+                                <input maxlength="100" type="number" id="age" required="required" class="form-control" placeholder="34" />
+                        </div>
+                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Suivant</button>
+                        
+                    </div>
+                </div> 
+            </div>
+            <div class="row setup-content" id="step-2">
+                <div class="col-xs-12">
+                    <div class="col-md-12">
+                        <h3> Votre expérience touristique rêvée</h3>
+                        <div class="form-group">
+                            <label class="control-label" for="number">Vous êtes plutot: </label>
+                            <p></p>
+                            <select class="custom-select" id="number" required="required">
+                                    <option selected>Choisir les options</option>
+                                    <option value="1">Solo</option>
+                                    <option value="2">Couple</option>
+                                    <option value="3">Famille</option>
+                                    <option value="3">Amis</option>
+                                    <option value="3">Groupe (min. 6 personnes)</option>
+                                  </select>
+                        </div>
+                        
+                        <div class="form-group form-inline" for="inlineCheckbox1">
+                                <label class="control-label">Quel type d'activité souhaitez-vous découvrir? </label>    
+                                <p> Plusieurs choix sont possibles</p>   
+                               
+                                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Expérience authentique 
+                                          <img src="img/authentique.png" alt="Expérience Authentique" style="max-width:100px;">
+                                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Découverte / Culture
+                                          <img src="img/découverte.png" alt="découverte" style="max-width:100px;">
+                                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Les incontournables  
+                                          <img src="img/incontournables.png" alt="incontournable" style="max-width:100px;">
+                                        <p></p>
+                                          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4"> Sport & Loisirs   
+                                          <img src="img/sport.png" alt="sport" style="max-width:100px;">
+                                          <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5"> Gastronomie   
+                                          <img src="img/gastronomie.png" alt="gastronomie" style="max-width:100px;">
+                                          <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6"> Détente    
+                                          <img src="img/détente.png" alt="détente" style="max-width:100px;">
+                        </div>
+                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row setup-content" id="step-3">
+                <div class="col-xs-12">
+                    <div class="col-md-12">
+                        <h3> Dernière Etape</h3>
+                        <div class="form-group form-inline ">
+                        <label class="control-label">Vous avez plutôt envie de? </label>    
+                        <p> Plusieurs choix sont possibles</p>   
+                        <label class="form-check-label ">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Art 
+                            <img src="img/art.png" alt="Expérience Authentique" style="max-width:100px;">
+                        </label> 
+                        <label class="form-check-label ">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Ateliers
+                            <img src="img/ateliers.png" alt="découverte" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Aventure  
+                            <img src="img/aventure.png" alt="incontournable" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4"> Balade   
+                            <img src="img/balade.png" alt="sport" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5"> Exposition   
+                            <img src="img/exposition.png" alt="gastronomie" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6"> Extrême    
+                            <img src="img/extrême.png" alt="détente" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Fun 
+                            <img src="img/fun.png" alt="Expérience Authentique" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Histoire
+                            <img src="img/Histoire.png" alt="découverte" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Insolite  
+                            <img src="img/Insolite.png" alt="incontournable" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4"> Musique  
+                            <img src="img/musique.png" alt="sport" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5"> Mystère   
+                            <img src="img/mystère.png" alt="gastronomie" style="max-width:100px;">
+                        </label>   
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6"> Nature    
+                            <img src="img/Nature.png" alt="détente" style="max-width:100px;">    
+                        </label>  
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4"> Spectacle  
+                            <img src="img/Spectacle.png" alt="sport" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5"> Relaxation   
+                            <img src="img/Relaxation.png" alt="gastronomie" style="max-width:100px;">
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6"> Romantique    
+                            <img src="img/Romantique.png" alt="détente" style="max-width:100px;">   
+                        </label> 
+                        </div>
+                        </div>
+
+                        <div class="form-group">
+                                <label class="control-label" for="date">Quel jour êtes vous disponible ? </label>
+                                <input style="max-width:200px" id="date" type="date" required="required" class="form-control" placeholder="34" />
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                  Je suis fléxible +/- 2 jours
+                                </label>
+                              </div>
+
+                        <div class="form-group">
+                                    <label class="control-label" for="prix">Pour l'activité, votre budget est de: </label>
+                                    <p></p>
+                                    <select class="custom-select" id="prix" required="required">
+                                            <option selected>Choisir les options</option>
+                                            <option value="1">0-5€ </option>
+                                            <option value="2">5€-15€</option>
+                                            <option value="3">15€-30€</option>
+                                            <option value="3">30€-60€</option>
+                                            <option value="3">Je n'ai pas de budget précis</option>
+                                          </select>
+                            </div>
+                        <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stepwizard">
+                    <div class="stepwizard-row setup-panel">
+                        <div class="stepwizard-step">
+                            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                            <p>Step 1</p>
+                        </div>
+                        <div class="stepwizard-step">
+                            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                            <p>Step 2</p>
+                        </div>
+                        <div class="stepwizard-step">
+                            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                            <p>Step 3</p>
+                        </div>
+                    </div>
+                </div>    
+        </form>
+        </div>
+
+    -->
+
+<!-- TYPEFORM -->
+
+
+<div class="typeform-widget" data-url="https://juntoexperiences.typeform.com/to/RHrpAc"  style="width: 100%; height: 500px;"></div>
+ <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> 
+ <div style="font-family:Ubuntu;font-size:12px;color: #999;opacity: 0.5; padding-top: 5px;"></div>
+
+
+ <!-- end TYPEFORM -->
+
+<!-- footer -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+            <div class="overlay"></div>
+            <div class="contact__line"></div>
+    
+            <div class="row section-header" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Contact Us</h3>
+                    <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
+                </div>
+            </div>
+    
+            <div class="row contact-content" data-aos="fade-up">
+                
+                <div class="contact-primary">
+    
+                    <h3 class="h6">Send Us A Message</h3>
+    
+                    <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                        <fieldset>
+        
+                        <div class="form-field">
+                            <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <button class="full-width btn--primary">Submit</button>
+                            <div class="submit-loader">
+                                <div class="text-loader">Sending...</div>
+                                <div class="s-loader">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+        </form>
+    
+                    <!-- contact-warning -->
+                    <div class="message-warning">
+                        Something went wrong. Please try again.
+                    </div> 
+                
+                    <!-- contact-success -->
+                    <div class="message-success">
+                        Your message was sent, thank you!<br>
+                    </div>
+    
+                </div> <!-- end contact-primary -->
+    
+                <div class="contact-secondary">
+                    <div class="contact-info">
+    
+                        <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+    
+                        <div class="cinfo">
+                            <h5>Where to Find Us</h5>
+                            <p>
+                                1600 Amphitheatre Parkway<br>
+                                Mountain View, CA<br>
+                                94043 US
+                            </p>
+                        </div>
+    
+                        <div class="cinfo">
+                            <h5>Email Us At</h5>
+                            <p>
+                                contact@glintsite.com<br>
+                                info@glintsite.com
+                            </p>
+                        </div>
+    
+                        <div class="cinfo">
+                            <h5>Call Us At</h5>
+                            <p>
+                                Phone: (+63) 555 1212<br>
+                                Mobile: (+63) 555 0100<br>
+                                Fax: (+63) 555 0101
+                            </p>
+                        </div>
+    
+                        <ul class="contact-social">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul> <!-- end contact-social -->
+    
+                    </div> <!-- end contact-info -->
+                </div> <!-- end contact-secondary -->
+    
+            </div> <!-- end contact-content -->
+    
+        </section> <!-- end s-contact -->
+    
+    <!-- end footer -->
+    
+     <!-- Java Script
+        ================================================== -->
+        
+        <script src="../static/js/jquery-3.2.1.min.js"></script>
+        <script src="../static/js/plugins.js"></script>
+        <script src="../static/js/main.js"></script>
+    
+    
+    </body>
+    </html>
+
+
+</body>
+
+</html>
